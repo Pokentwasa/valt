@@ -7,78 +7,80 @@
 <meta name="description" content="VALT. Architecture meets ambition. Premium residential, commercial and hospitality developments across Southern Africa and Europe.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="is-loading">
+
+<div class="page-loader" id="pageLoader">
+  <div class="loader-logo">VALT</div>
+  <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+</div>
 
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"><span id="cursorLabel"></span></div>
 
-<!-- NAV -->
 <header class="nav" id="nav">
   <div class="nav-inner">
-    <a href="#" class="nav-logo">VALT</a>
+    <a href="index.html" class="nav-logo">VALT</a>
     <nav class="nav-links">
-      <a href="#types" data-cursor>Developments</a>
+      <a href="#developments" data-cursor>Developments</a>
       <a href="#gallery" data-cursor>Portfolio</a>
       <a href="#about" data-cursor>Studio</a>
       <a href="#contact" data-cursor>Contact</a>
     </nav>
-    <a href="#contact" class="nav-cta" data-cursor>Enquire</a>
+    <a href="#contact" class="nav-cta" data-cursor>Enquire Now</a>
   </div>
 </header>
 
 <!-- HERO CAROUSEL -->
 <section class="hero" id="hero">
   <div class="hero-slides" id="heroSlides">
-
     <div class="hero-slide is-active">
-      <div class="slide-img"><img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1800&q=85&fit=crop" alt="The Meridian"></div>
+      <div class="slide-img"><img src="https://images.unsplash.com/photo-1600585154526-acbbde5b3c2e?w=1800&q=85&fit=crop" alt="The Meridian"></div>
       <div class="slide-overlay"></div>
       <div class="slide-content">
-        <span class="slide-tag">Residential — Sea Point, Cape Town</span>
-        <h2 class="slide-title">The Meridian</h2>
-        <a href="#gallery" class="slide-cta" data-cursor>View Project</a>
+        <span class="slide-tag fade-hero">Residential — Sea Point, Cape Town</span>
+        <h2 class="slide-title"><span class="sh-line"><span class="sh-word">The</span></span><span class="sh-line"><span class="sh-word">Meridian</span></span></h2>
+        <div class="slide-price fade-hero">From <strong>R4.2M</strong></div>
+        <a href="meridian.html" class="slide-cta fade-hero" data-cursor>View Development →</a>
       </div>
       <div class="slide-num">01 / 04</div>
     </div>
-
     <div class="hero-slide">
       <div class="slide-img"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1800&q=85&fit=crop" alt="Volta Quarter"></div>
       <div class="slide-overlay"></div>
       <div class="slide-content">
-        <span class="slide-tag">Mixed-Use — Woodstock, Cape Town</span>
-        <h2 class="slide-title">Volta Quarter</h2>
-        <a href="#gallery" class="slide-cta" data-cursor>View Project</a>
+        <span class="slide-tag fade-hero">Mixed-Use — Woodstock, Cape Town</span>
+        <h2 class="slide-title"><span class="sh-line"><span class="sh-word">Volta</span></span><span class="sh-line"><span class="sh-word">Quarter</span></span></h2>
+        <div class="slide-price fade-hero">From <strong>R2.8M</strong></div>
+        <a href="volta.html" class="slide-cta fade-hero" data-cursor>View Development →</a>
       </div>
       <div class="slide-num">02 / 04</div>
     </div>
-
     <div class="hero-slide">
       <div class="slide-img"><img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1800&q=85&fit=crop" alt="Olive House"></div>
       <div class="slide-overlay"></div>
       <div class="slide-content">
-        <span class="slide-tag">Hospitality — Franschhoek, Western Cape</span>
-        <h2 class="slide-title">Olive House</h2>
-        <a href="#gallery" class="slide-cta" data-cursor>View Project</a>
+        <span class="slide-tag fade-hero">Hospitality — Franschhoek</span>
+        <h2 class="slide-title"><span class="sh-line"><span class="sh-word">Olive</span></span><span class="sh-line"><span class="sh-word">House</span></span></h2>
+        <div class="slide-price fade-hero">Investment from <strong>R8.5M</strong></div>
+        <a href="olive.html" class="slide-cta fade-hero" data-cursor>View Development →</a>
       </div>
       <div class="slide-num">03 / 04</div>
     </div>
-
     <div class="hero-slide">
       <div class="slide-img"><img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1800&q=85&fit=crop" alt="Skyline Terrace"></div>
       <div class="slide-overlay"></div>
       <div class="slide-content">
-        <span class="slide-tag">Penthouse — V&A Waterfront, Cape Town</span>
-        <h2 class="slide-title">Skyline Terrace</h2>
-        <a href="#gallery" class="slide-cta" data-cursor>View Project</a>
+        <span class="slide-tag fade-hero">Penthouse — V&A Waterfront</span>
+        <h2 class="slide-title"><span class="sh-line"><span class="sh-word">Skyline</span></span><span class="sh-line"><span class="sh-word">Terrace</span></span></h2>
+        <div class="slide-price fade-hero">Register interest — launching 2026</div>
+        <a href="skyline.html" class="slide-cta fade-hero" data-cursor>Register Interest →</a>
       </div>
       <div class="slide-num">04 / 04</div>
     </div>
-
   </div>
-
   <div class="hero-controls">
     <button class="hero-btn" id="heroPrev" aria-label="Previous">←</button>
     <div class="hero-dots" id="heroDots">
@@ -86,9 +88,12 @@
     </div>
     <button class="hero-btn" id="heroNext" aria-label="Next">→</button>
   </div>
+  <div class="hero-scroll-hint">
+    <div class="hsline"></div><span>Scroll</span>
+  </div>
 </section>
 
-<!-- INTRO STATEMENT -->
+<!-- INTRO -->
 <section class="intro">
   <div class="intro-inner">
     <h1 class="intro-title">
@@ -106,112 +111,177 @@
   </div>
 </section>
 
-<!-- DEVELOPMENT TYPES -->
-<section class="types" id="types">
-  <div class="types-header">
-    <span class="section-label">WHAT WE BUILD</span>
-    <h2 class="section-title"><span class="line"><span class="word">Development</span></span><span class="line"><span class="word">Typologies</span></span></h2>
+<!-- ACTIVE DEVELOPMENTS -->
+<section class="developments" id="developments">
+  <div class="dev-header">
+    <span class="section-label">ACTIVE DEVELOPMENTS</span>
+    <h2 class="section-title"><span class="line"><span class="word">Available</span></span><span class="line"><span class="word">Now</span></span></h2>
   </div>
-  <div class="types-grid">
-    <article class="type-card fade-up" data-cursor-label="EXPLORE">
-      <div class="type-img"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80&fit=crop" alt="Residential" loading="lazy"></div>
-      <div class="type-info"><h3>Residential</h3><p>Apartments, villas, and penthouse collections designed for how people actually live.</p></div>
-    </article>
-    <article class="type-card fade-up" data-cursor-label="EXPLORE">
-      <div class="type-img"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80&fit=crop" alt="Commercial" loading="lazy"></div>
-      <div class="type-info"><h3>Commercial</h3><p>Mixed-use and office developments that anchor neighbourhoods and generate long-term yield.</p></div>
-    </article>
-    <article class="type-card fade-up" data-cursor-label="EXPLORE">
-      <div class="type-img"><img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80&fit=crop" alt="Hospitality" loading="lazy"></div>
-      <div class="type-info"><h3>Hospitality</h3><p>Boutique hotels and experiential retreats in South Africa's most desirable locations.</p></div>
-    </article>
+  <div class="dev-grid">
+    <a href="meridian.html" class="dev-card fade-up" data-cursor-label="VIEW">
+      <div class="dev-img"><img src="https://images.unsplash.com/photo-1600585154526-acbbde5b3c2e?w=900&q=80&fit=crop" alt="The Meridian" loading="lazy"></div>
+      <div class="dev-badge dev-badge--active">Available Now</div>
+      <div class="dev-info">
+        <div class="dev-meta"><span class="dev-type">Residential</span><span class="dev-location">Sea Point, CPT</span></div>
+        <h3 class="dev-name">The Meridian</h3>
+        <div class="dev-specs"><span>42 Units</span><span>1–4 Bed</span><span>4,820 m²</span></div>
+        <div class="dev-price">From <strong>R4.2M</strong></div>
+      </div>
+    </a>
+    <a href="volta.html" class="dev-card fade-up" data-cursor-label="VIEW">
+      <div class="dev-img"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&q=80&fit=crop" alt="Volta Quarter" loading="lazy"></div>
+      <div class="dev-badge dev-badge--active">Available Now</div>
+      <div class="dev-info">
+        <div class="dev-meta"><span class="dev-type">Mixed-Use</span><span class="dev-location">Woodstock, CPT</span></div>
+        <h3 class="dev-name">Volta Quarter</h3>
+        <div class="dev-specs"><span>128 Units</span><span>Studio–3 Bed</span><span>8,340 m²</span></div>
+        <div class="dev-price">From <strong>R2.8M</strong></div>
+      </div>
+    </a>
+    <a href="olive.html" class="dev-card fade-up" data-cursor-label="VIEW">
+      <div class="dev-img"><img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=900&q=80&fit=crop" alt="Olive House" loading="lazy"></div>
+      <div class="dev-badge dev-badge--invest">Investment</div>
+      <div class="dev-info">
+        <div class="dev-meta"><span class="dev-type">Hospitality</span><span class="dev-location">Franschhoek, WC</span></div>
+        <h3 class="dev-name">Olive House</h3>
+        <div class="dev-specs"><span>18 Rooms</span><span>3.4 Hectares</span><span>1,640 m²</span></div>
+        <div class="dev-price">From <strong>R8.5M</strong></div>
+      </div>
+    </a>
+    <a href="skyline.html" class="dev-card fade-up" data-cursor-label="REGISTER">
+      <div class="dev-img"><img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=900&q=80&fit=crop" alt="Skyline Terrace" loading="lazy"></div>
+      <div class="dev-badge dev-badge--launch">Launching 2026</div>
+      <div class="dev-info">
+        <div class="dev-meta"><span class="dev-type">Penthouse</span><span class="dev-location">V&A Waterfront, CPT</span></div>
+        <h3 class="dev-name">Skyline Terrace</h3>
+        <div class="dev-specs"><span>12 Units</span><span>3–5 Bed</span><span>2,180 m²</span></div>
+        <div class="dev-price dev-price--register">Register Interest</div>
+      </div>
+    </a>
   </div>
 </section>
 
-<!-- WORK GALLERY -->
+<!-- GALLERY -->
 <section class="gallery" id="gallery">
   <div class="gallery-header">
-    <span class="section-label">SELECTED WORK</span>
-    <h2 class="section-title"><span class="line"><span class="word">Featured</span></span><span class="line"><span class="word">Developments</span></span></h2>
+    <span class="section-label">PORTFOLIO</span>
+    <h2 class="section-title"><span class="line"><span class="word">Completed</span></span><span class="line"><span class="word">Work</span></span></h2>
   </div>
-
   <div class="gallery-grid">
-
-    <article class="gallery-card gallery-card--wide fade-up" data-cursor-label="VIEW">
-      <div class="gallery-img"><img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1400&q=80&fit=crop" alt="The Meridian" loading="lazy"></div>
-      <div class="gallery-info">
-        <div class="gallery-meta"><span class="gallery-tag">Residential</span><span class="gallery-year">2025</span></div>
-        <h3>The Meridian</h3>
-        <p>Sea Point, Cape Town · 42 units · 4,820 m²</p>
-      </div>
-    </article>
-
-    <article class="gallery-card fade-up" data-cursor-label="VIEW">
-      <div class="gallery-img"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80&fit=crop" alt="Volta Quarter" loading="lazy"></div>
-      <div class="gallery-info">
-        <div class="gallery-meta"><span class="gallery-tag">Mixed-Use</span><span class="gallery-year">2025</span></div>
-        <h3>Volta Quarter</h3>
-        <p>Woodstock, Cape Town · 8,340 m²</p>
-      </div>
-    </article>
-
-    <article class="gallery-card fade-up" data-cursor-label="VIEW">
-      <div class="gallery-img"><img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80&fit=crop" alt="Olive House" loading="lazy"></div>
-      <div class="gallery-info">
-        <div class="gallery-meta"><span class="gallery-tag">Hospitality</span><span class="gallery-year">2024</span></div>
-        <h3>Olive House</h3>
-        <p>Franschhoek, Western Cape · 18 rooms</p>
-      </div>
-    </article>
-
-    <article class="gallery-card fade-up" data-cursor-label="VIEW">
-      <div class="gallery-img"><img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=80&fit=crop" alt="Skyline Terrace" loading="lazy"></div>
-      <div class="gallery-info">
-        <div class="gallery-meta"><span class="gallery-tag">Penthouse</span><span class="gallery-year">2026</span></div>
-        <h3>Skyline Terrace</h3>
-        <p>V&A Waterfront, Cape Town · 2,180 m²</p>
-      </div>
-    </article>
-
-    <article class="gallery-card fade-up" data-cursor-label="VIEW">
-      <div class="gallery-img"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80&fit=crop" alt="Kalk Bay Lofts" loading="lazy"></div>
-      <div class="gallery-info">
-        <div class="gallery-meta"><span class="gallery-tag">Residential</span><span class="gallery-year">2027</span></div>
-        <h3>The Kalk Bay Lofts</h3>
-        <p>Kalk Bay, Cape Town · 3,200 m²</p>
-      </div>
-    </article>
-
-    <article class="gallery-card fade-up" data-cursor-label="VIEW">
-      <div class="gallery-img"><img src="https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?w=800&q=80&fit=crop" alt="One Hyde Park House" loading="lazy"></div>
-      <div class="gallery-info">
-        <div class="gallery-meta"><span class="gallery-tag">Luxury Res.</span><span class="gallery-year">2023</span></div>
-        <h3>One Hyde Park House</h3>
-        <p>Knightsbridge, London · 940 m²</p>
-      </div>
-    </article>
-
+    <a href="meridian.html" class="gc gc--tall fade-up" data-cursor-label="VIEW"><div class="gc-img"><img src="https://images.unsplash.com/photo-1600585154526-acbbde5b3c2e?w=900&q=80&fit=crop" alt="The Meridian" loading="lazy"></div><div class="gc-info"><span>Residential</span><h3>The Meridian</h3></div></a>
+    <a href="volta.html" class="gc fade-up" data-cursor-label="VIEW"><div class="gc-img"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&q=80&fit=crop" alt="Volta Quarter" loading="lazy"></div><div class="gc-info"><span>Mixed-Use</span><h3>Volta Quarter</h3></div></a>
+    <a href="olive.html" class="gc fade-up" data-cursor-label="VIEW"><div class="gc-img"><img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=900&q=80&fit=crop" alt="Olive House" loading="lazy"></div><div class="gc-info"><span>Hospitality</span><h3>Olive House</h3></div></a>
+    <a href="skyline.html" class="gc fade-up" data-cursor-label="VIEW"><div class="gc-img"><img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=900&q=80&fit=crop" alt="Skyline Terrace" loading="lazy"></div><div class="gc-info"><span>Penthouse</span><h3>Skyline Terrace</h3></div></a>
+    <a href="#" class="gc fade-up" data-cursor-label="VIEW"><div class="gc-img"><img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=900&q=80&fit=crop" alt="Kalk Bay Lofts" loading="lazy"></div><div class="gc-info"><span>Residential</span><h3>Kalk Bay Lofts</h3></div></a>
+    <a href="#" class="gc fade-up" data-cursor-label="VIEW"><div class="gc-img"><img src="https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?w=900&q=80&fit=crop" alt="One Hyde Park House" loading="lazy"></div><div class="gc-info"><span>Luxury Res.</span><h3>Hyde Park House</h3></div></a>
   </div>
 </section>
 
-<!-- ABOUT STRIP -->
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="testimonials-inner">
+    <span class="section-label">WHAT BUYERS SAY</span>
+    <div class="testi-grid">
+      <div class="testi-card fade-up">
+        <p class="testi-quote">"VALT delivered everything they promised and more. The finish quality at The Meridian exceeded every other development we considered. Our unit appreciated 18% in the first year."</p>
+        <div class="testi-author"><strong>Thabo & Karin M.</strong><span>The Meridian, Unit 802</span></div>
+      </div>
+      <div class="testi-card fade-up">
+        <p class="testi-quote">"The investment case for Volta Quarter was clear from day one. VALT's team walked us through every number, every material choice. We bought two units off-plan and couldn't be happier."</p>
+        <div class="testi-author"><strong>James Whitfield</strong><span>Volta Quarter, Units 4A & 4B</span></div>
+      </div>
+      <div class="testi-card fade-up">
+        <p class="testi-quote">"Olive House is extraordinary. The attention to the landscape, the light, the materials — it doesn't feel like a hotel, it feels like someone's dream home. Because it is."</p>
+        <div class="testi-author"><strong>Anita Patel</strong><span>Olive House Investor</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REGISTER INTEREST -->
+<section class="register" id="register">
+  <div class="register-img"><img src="https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?w=1200&q=80&fit=crop" alt="VALT Development"></div>
+  <div class="register-content">
+    <span class="section-label">OFF-PLAN PRIORITY ACCESS</span>
+    <h2 class="register-title"><span class="line"><span class="word">Be first</span></span><span class="line"><span class="word">in line.</span></span></h2>
+    <p class="register-sub fade-up">Register your interest in Skyline Terrace and Kalk Bay Lofts before they go public. Priority pricing. First unit selection. No obligation.</p>
+    <form class="register-form" id="registerForm">
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+      </div>
+      <div class="form-row">
+        <input type="tel" name="phone" placeholder="Phone / WhatsApp">
+        <select name="development">
+          <option value="">Select Development</option>
+          <option>Skyline Terrace — Penthouse</option>
+          <option>Kalk Bay Lofts — Residential</option>
+          <option>Both</option>
+        </select>
+      </div>
+      <button type="submit" class="form-submit" data-cursor>Register My Interest →</button>
+      <p class="form-note">No spam. No obligation. We'll contact you within 24 hours.</p>
+    </form>
+    <div class="form-success" id="formSuccess">
+      <span>✓</span>
+      <h3>You're on the list.</h3>
+      <p>We'll be in touch within 24 hours with exclusive pre-launch details.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
 <section class="about" id="about">
-  <div class="about-img"><img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80&fit=crop" alt="VALT studio" loading="lazy"></div>
+  <div class="about-img parallax-img"><img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80&fit=crop" alt="VALT studio" loading="lazy"></div>
   <div class="about-text">
     <span class="section-label">THE STUDIO</span>
     <h2 class="about-title"><span class="line"><span class="word">Acquire.</span></span><span class="line"><span class="word">Design.</span></span><span class="line"><span class="word">Deliver.</span></span></h2>
-    <p class="about-body fade-up">Founded in Cape Town in 2019, VALT is a full-cycle property studio — we identify undervalued assets, design them with award-winning architects, and deliver them to an exacting standard. No handoffs. No diluted vision. From site acquisition to handover keys, we're the same team throughout.</p>
-    <p class="about-body fade-up">Operating from Cape Town and London, with completed developments across South Africa and the United Kingdom.</p>
+    <p class="about-body fade-up">Founded in Cape Town in 2019, VALT is a full-cycle property studio. We identify undervalued assets, design them with award-winning architects, and deliver them to an exacting standard. No handoffs. No diluted vision. From site acquisition to handover keys, we're the same team throughout.</p>
+    <p class="about-body fade-up">Operating from Cape Town and London. Completed developments across South Africa and the United Kingdom.</p>
+    <a href="#contact" class="btn-line fade-up" data-cursor>Talk to the team →</a>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- CONTACT / LEAD FORM -->
 <footer class="footer" id="contact">
   <div class="footer-inner">
-    <div class="footer-cta">
-      <span class="section-label">START A CONVERSATION</span>
-      <h2 class="footer-title"><span class="line"><span class="word">Ready to invest</span></span><span class="line"><span class="word">in something real?</span></span></h2>
-      <a href="mailto:invest@valt.studio" class="footer-email" data-cursor>invest@valt.studio</a>
+    <div class="footer-top">
+      <div class="footer-cta">
+        <span class="section-label">ENQUIRE</span>
+        <h2 class="footer-title"><span class="line"><span class="word">Ready to invest</span></span><span class="line"><span class="word">in something real?</span></span></h2>
+      </div>
+      <form class="lead-form" id="leadForm">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+        </div>
+        <div class="form-row">
+          <input type="tel" name="phone" placeholder="Phone / WhatsApp">
+          <select name="interest">
+            <option value="">I'm interested in…</option>
+            <option>The Meridian</option>
+            <option>Volta Quarter</option>
+            <option>Olive House</option>
+            <option>Skyline Terrace</option>
+            <option>General Enquiry</option>
+          </select>
+        </div>
+        <textarea name="message" placeholder="Tell us about your requirements (optional)" rows="3"></textarea>
+        <div class="lead-form-actions">
+          <button type="submit" class="form-submit" data-cursor>Send Enquiry →</button>
+          <a href="https://wa.me/27000000000?text=Hi%20VALT%2C%20I'm%20interested%20in%20your%20developments" class="whatsapp-btn" target="_blank" rel="noopener" data-cursor>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp Us
+          </a>
+        </div>
+        <p class="form-note">We respond within 24 hours. Your details are never shared.</p>
+      </form>
+      <div class="lead-success" id="leadSuccess">
+        <span>✓</span>
+        <h3>Enquiry received.</h3>
+        <p>A member of our team will be in touch within 24 hours.</p>
+        <a href="https://wa.me/27000000000" class="whatsapp-btn" target="_blank">WhatsApp us directly instead →</a>
+      </div>
     </div>
     <div class="footer-grid">
       <div class="footer-col"><span class="footer-label">Studios</span><p>Cape Town, South Africa<br>London, United Kingdom</p></div>
