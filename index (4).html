@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VALT — Premium Property & Real Estate Studio</title>
+<meta name="description" content="VALT. Architecture meets ambition. Premium property development and investment studio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas class="webgl-canvas" id="webglCanvas"></canvas>
+
+<div class="grid-overlay" aria-hidden="true">
+  <div class="grid-col"></div><div class="grid-col"></div><div class="grid-col"></div>
+  <div class="grid-col"></div><div class="grid-col"></div><div class="grid-col"></div>
+</div>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<header class="nav">
+  <div class="nav-cell nav-cell--logo">
+    <span class="coord">00:00</span>
+    <a href="#" class="nav-logo">VALT</a>
+  </div>
+  <div class="nav-cell nav-cell--links">
+    <a href="#ledger" data-cursor>Developments</a>
+    <a href="#projects" data-cursor>Portfolio</a>
+    <a href="#contact" data-cursor>Enquire</a>
+  </div>
+  <div class="nav-cell nav-cell--meta">
+    <span class="coord">CPT — LDN</span>
+    <span class="coord">EST. 2019</span>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-left">
+      <div class="hero-tag"><span class="coord">SEC.01</span><span>Property Studio</span></div>
+      <h1 class="hero-title">
+        <span class="line"><span class="word">STRUCTURAL</span></span>
+        <span class="line"><span class="word">INTEGRITY.</span></span>
+        <span class="line hero-line--outline"><span class="word">DEFINED.</span></span>
+      </h1>
+      <p class="hero-sub fade-up">Architecture meets ambition. We acquire, design, and deliver property at the intersection of investment discipline and design excellence.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary" data-cursor>View Portfolio</a>
+        <a href="#contact" class="btn-ghost" data-cursor>Enquire</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-img-frame">
+        <div class="hero-img-wrap">
+          <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=80&fit=crop" alt="VALT flagship development">
+        </div>
+        <div class="hero-img-coords">
+          <span>33°54'S 18°25'E</span>
+          <span>THE MERIDIAN — ACTIVE</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint"><div class="scroll-line"></div><span>SCROLL</span></div>
+  </section>
+
+  <!-- DATA LEDGER -->
+  <section class="ledger" id="ledger">
+    <div class="ledger-header">
+      <span class="coord">SEC.02 / ACTIVE DEVELOPMENTS</span>
+      <h2 class="ledger-title"><span class="line"><span class="word">Development</span></span><span class="line"><span class="word">Ledger.</span></span></h2>
+    </div>
+    <div class="ledger-table">
+      <div class="ledger-row ledger-row--head">
+        <span>REF</span><span>PROJECT</span><span>TYPOLOGY</span><span>LOCATION</span><span>SQM</span><span>STATUS</span><span>COMPLETION</span>
+      </div>
+      <div class="ledger-row fade-up">
+        <span class="ref">VLT-001</span>
+        <span class="project-name">The Meridian</span>
+        <span>Residential</span>
+        <span>Sea Point, CPT</span>
+        <span>4,820 m²</span>
+        <span class="status status--active">ACTIVE</span>
+        <span>Q2 2025</span>
+      </div>
+      <div class="ledger-row fade-up">
+        <span class="ref">VLT-002</span>
+        <span class="project-name">Volta Quarter</span>
+        <span>Mixed-Use</span>
+        <span>Woodstock, CPT</span>
+        <span>8,340 m²</span>
+        <span class="status status--active">ACTIVE</span>
+        <span>Q4 2025</span>
+      </div>
+      <div class="ledger-row fade-up">
+        <span class="ref">VLT-003</span>
+        <span class="project-name">Olive House</span>
+        <span>Hospitality</span>
+        <span>Franschhoek, WC</span>
+        <span>1,640 m²</span>
+        <span class="status status--complete">COMPLETE</span>
+        <span>Q1 2024</span>
+      </div>
+      <div class="ledger-row fade-up">
+        <span class="ref">VLT-004</span>
+        <span class="project-name">Skyline Terrace</span>
+        <span>Penthouse</span>
+        <span>V&A Waterfront, CPT</span>
+        <span>2,180 m²</span>
+        <span class="status status--planning">PLANNING</span>
+        <span>Q3 2026</span>
+      </div>
+      <div class="ledger-row fade-up">
+        <span class="ref">VLT-005</span>
+        <span class="project-name">The Kalk Bay Lofts</span>
+        <span>Residential</span>
+        <span>Kalk Bay, CPT</span>
+        <span>3,200 m²</span>
+        <span class="status status--planning">PLANNING</span>
+        <span>Q1 2027</span>
+      </div>
+      <div class="ledger-row fade-up">
+        <span class="ref">VLT-006</span>
+        <span class="project-name">One Hyde Park House</span>
+        <span>Luxury Res.</span>
+        <span>Knightsbridge, LDN</span>
+        <span>940 m²</span>
+        <span class="status status--complete">COMPLETE</span>
+        <span>Q3 2023</span>
+      </div>
+    </div>
+    <div class="ledger-totals fade-up">
+      <div class="total-item"><span class="coord">TOTAL PORTFOLIO</span><span class="total-num">21,120 m²</span></div>
+      <div class="total-item"><span class="coord">ACTIVE PROJECTS</span><span class="total-num">04</span></div>
+      <div class="total-item"><span class="coord">COUNTRIES</span><span class="total-num">02</span></div>
+      <div class="total-item"><span class="coord">YEARS OPERATING</span><span class="total-num">06</span></div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="projects-header">
+      <span class="coord">SEC.03 / SELECTED WORK</span>
+      <h2 class="projects-title"><span class="line"><span class="word">Featured</span></span><span class="line"><span class="word">Living Spaces.</span></span></h2>
+    </div>
+
+    <article class="project-card fade-up" data-cursor>
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80&fit=crop" alt="The Meridian" loading="lazy">
+      </div>
+      <div class="card-info">
+        <div class="card-meta"><span class="coord">VLT-001 / RESIDENTIAL</span><span class="card-year">2025</span></div>
+        <h3 class="card-title">The Meridian</h3>
+        <p class="card-location">Sea Point, Cape Town</p>
+        <div class="card-specs">
+          <span><span class="coord">UNITS</span><strong>42</strong></span>
+          <span><span class="coord">FLOORS</span><strong>14</strong></span>
+          <span><span class="coord">SQM</span><strong>4,820</strong></span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card fade-up" data-cursor>
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200&q=80&fit=crop" alt="Volta Quarter" loading="lazy">
+      </div>
+      <div class="card-info">
+        <div class="card-meta"><span class="coord">VLT-002 / MIXED-USE</span><span class="card-year">2025</span></div>
+        <h3 class="card-title">Volta Quarter</h3>
+        <p class="card-location">Woodstock, Cape Town</p>
+        <div class="card-specs">
+          <span><span class="coord">UNITS</span><strong>128</strong></span>
+          <span><span class="coord">RETAIL</span><strong>2,400 m²</strong></span>
+          <span><span class="coord">SQM</span><strong>8,340</strong></span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card fade-up" data-cursor>
+      <div class="card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80&fit=crop" alt="Olive House" loading="lazy">
+      </div>
+      <div class="card-info">
+        <div class="card-meta"><span class="coord">VLT-003 / HOSPITALITY</span><span class="card-year">2024</span></div>
+        <h3 class="card-title">Olive House</h3>
+        <p class="card-location">Franschhoek, Western Cape</p>
+        <div class="card-specs">
+          <span><span class="coord">ROOMS</span><strong>18</strong></span>
+          <span><span class="coord">HECTARES</span><strong>3.4</strong></span>
+          <span><span class="coord">SQM</span><strong>1,640</strong></span>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- APPROACH -->
+  <section class="approach">
+    <div class="approach-inner">
+      <div class="approach-left">
+        <span class="coord">SEC.04 / METHODOLOGY</span>
+        <h2 class="approach-title"><span class="line"><span class="word">Acquire.</span></span><span class="line"><span class="word">Design.</span></span><span class="line"><span class="word">Deliver.</span></span></h2>
+      </div>
+      <div class="approach-right">
+        <div class="approach-item fade-up">
+          <span class="approach-num">01</span>
+          <div><h4>Site Acquisition</h4><p>We identify undervalued assets in high-trajectory corridors, stress-tested against 10-year yield projections and urban development patterns.</p></div>
+        </div>
+        <div class="approach-item fade-up">
+          <span class="approach-num">02</span>
+          <div><h4>Design Excellence</h4><p>Award-winning architectural partners. Every material specification and spatial proportion is resolved before ground breaks. No surprises on site.</p></div>
+        </div>
+        <div class="approach-item fade-up">
+          <span class="approach-num">03</span>
+          <div><h4>Delivery & Management</h4><p>Full lifecycle oversight. We manage contractors, procurement, and programme so the design intent survives construction intact.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer" id="contact">
+  <div class="footer-inner">
+    <div class="footer-cta">
+      <span class="coord">SEC.05 / CONTACT</span>
+      <h2 class="footer-title">
+        <span class="line"><span class="word">Let's build</span></span>
+        <span class="line"><span class="word">something</span></span>
+        <span class="line footer-line--outline"><span class="word">that endures.</span></span>
+      </h2>
+      <a href="mailto:invest@valt.studio" class="btn-primary" data-cursor>Start a Conversation</a>
+    </div>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <span class="coord">STUDIOS</span>
+        <p>Cape Town, South Africa<br>London, United Kingdom</p>
+      </div>
+      <div class="footer-col">
+        <span class="coord">CONTACT</span>
+        <p><a href="mailto:invest@valt.studio" data-cursor>invest@valt.studio</a></p>
+      </div>
+      <div class="footer-col">
+        <span class="coord">CONNECT</span>
+        <p><a href="#" data-cursor>LinkedIn</a><br><a href="#" data-cursor>Instagram</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 VALT Property Studio. All rights reserved.</span>
+      <span class="coord">21,120 m² UNDER DEVELOPMENT</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
